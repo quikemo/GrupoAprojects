@@ -1,0 +1,3 @@
+include ':libreriaCarteraCliente'
+include ':app'
+rootProject.name = "ClienteProvider"

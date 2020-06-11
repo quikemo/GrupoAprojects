@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:namespace="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.clienteprovider.MainActivity">
+    <LinearLayout
+        android:id="@+id/lblTop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txttitulo"
+            android:text="Lista de Clientes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lblBottones"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lblTop"
+        android:background="@color/colorAccent"
+
+        >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+            android:background="#00FFFFFF"
+            android:onClick="refrescarPantalla"
+            android:src="@android:drawable/stat_notify_sync"
+            android:text="Refrescar" />
+
+        <ImageButton
+            android:id="@+id/btnEliminarRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#00FFFFFF"
+            android:onClick="eliminarRegistro"
+            android:src="@android:drawable/ic_delete"
+            android:text="@string/eliminar" />
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lblBottones">
+        <ListView
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/colorAccent"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/black"
+            android:dividerHeight="0.7dp"
+            android:scrollbarStyle="outsideOverlay" >
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

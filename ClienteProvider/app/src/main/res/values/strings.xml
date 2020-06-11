@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ClienteProvider</string>
+    <string name="cabecera">Datos del provider</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="campoVacio">Sin Seleccionar</string>
+    <string name="eliminar">Eliminar</string>
+
+</resources>
